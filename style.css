@@ -1,0 +1,422 @@
+    body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+        font-family: 'Dancing Script', cursive;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        background-color: #84CEEB;
+        height: 90px;
+    }
+    
+    nav ul {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        margin-top: 60px;
+        list-style: none;
+        padding: 0;
+        display: none;
+    }
+    
+    nav ul li {
+        transition: 1s;
+    }
+    
+    nav ul li:hover {
+        background-color: #8860D0;
+        background-image: linear-gradient(to bottom, #8860D0, #5680E9);
+        border-radius: 10px;
+        border: none;
+        transform: scale(1.2);
+    }
+    
+    #logo {
+        margin-left: 20px;
+        height: 50px;
+        margin-top: 20px;
+    }
+    
+    #buttonList {
+        margin-right: 10px;
+        margin-top: 20px;
+        height: 50px;
+        width: 50px;
+    }
+    
+    main img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    footer img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    #ulInformatii li {
+        border-left: 2px solid #8860D0;
+        margin-top: 15px;
+        font-size: 1.2em;
+        padding-left: 10px;
+        color: white;
+    }
+    
+    header {
+        background-image: url('poze/backround.jpg');
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    form {
+        width: 50%;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    
+    form input {
+        width: 75%;
+        border: none;
+        height: 40px;
+    }
+    
+    form img {
+        height: 30px;
+        margin-right: 10px;
+        border-right: 1px solid gray;
+        padding-right: 10px;
+    }
+    
+    main {
+        margin-top: 50px;
+    }
+    
+    .firma {
+        width: 90%;
+        margin: auto;
+        border: 3px solid #8860D0;
+        box-shadow: 1px 1px 1px 0.5px black;
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .firma img {
+        width: 100%;
+        height: 200px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid gray;
+    }
+    
+    .descriere {
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    .firma h3 {
+        text-align: left;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .adresa {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        font-size: .79em;
+        color: rgb(163, 163, 163);
+    }
+    
+    .programeaza {
+        background-color: #8860D0;
+        background-image: linear-gradient(to bottom, #8860D0, #5680E9);
+        border: none;
+        color: white;
+        font-size: 1.2em;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+    }
+    
+    .editeaza {
+        background-color: #8860D0;
+        background-image: linear-gradient(to right, #5680E9, #8860D0);
+        border: none;
+        color: white;
+        font-size: 1.2em;
+        padding: 0px 10px 0px 10px;
+        border-radius: 5px;
+    }
+    
+    .buttoane {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 30px;
+        margin-top: 20px;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    
+    .editareFirme {
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+        background-color: #8860D0;
+        background-image: linear-gradient(to right, #5680E9, #8860D0);
+        border: none;
+        color: white;
+        padding: 10px 10px;
+        border-radius: 10px;
+        text-transform: uppercase;
+    }
+    
+    .add {
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+        background-color: #8860D0;
+        background-image: linear-gradient(to right, #5680E9, #8860D0);
+        border: none;
+        color: white;
+        padding: 10px 10px;
+        border-radius: 10px;
+        text-transform: uppercase;
+    }
+    
+    .save {
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+        background-color: #8860D0;
+        background-image: linear-gradient(to right, #5680E9, #8860D0);
+        border: none;
+        color: white;
+        padding: 10px 10px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        display: none;
+    }
+    
+    .delete {
+        width: 20px;
+        height: 20px;
+        background-image: url('poze/delete.svg');
+        display: block;
+        top: -12px;
+        right: -15px;
+        border: none;
+        position: absolute;
+        display: none;
+    }
+    
+    .divAdmin {
+        display: flex;
+    }
+    
+    .meniuAdauga {
+        width: 50%;
+        margin: auto;
+        margin-top: 40px;
+        display: none;
+    }
+    
+    .formMeniu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #5680E9;
+        color: white;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+        ;
+    }
+    
+    .formMeniu input {
+        border-radius: 5px;
+        border: 2px solid #8860D0;
+    }
+    
+    .formMeniu label {
+        margin-top: 20px;
+    }
+    
+    .formMeniu input {
+        width: 90%;
+        border-radius: 10px;
+        color: black;
+    }
+    
+    #firstFooter {
+        background-image: linear-gradient(to left, #5680E9, #8860D0);
+        margin-top: 30px;
+        padding-bottom: 20px;
+        ;
+    }
+    
+    #firstFooter * {
+        margin-left: 30px;
+    }
+    
+    #firstFooter img {
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+    }
+    
+    #firstFooter ul {
+        margin: 0;
+        list-style: none;
+    }
+    
+    #firstFooter ul li {
+        margin: 0;
+        color: white;
+        margin-top: 20px;
+    }
+    
+    #firstFooter p {
+        font-size: 1.5em;
+        color: white;
+    }
+    
+    #secondFooter {
+        background-image: linear-gradient(to right, #5680E9, #8860D0);
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        ;
+    }
+    
+    #secondFooter a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #TermeniSiConditii {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .firma {
+        max-width: 450px;
+    }
+    
+    @media(min-width:500px) {
+        #secondFooter {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #secondFooter p {
+            width: 70%;
+        }
+    }
+    
+    .descriere {
+        min-height: 65.45px;
+    }
+    
+    @media(min-width:720px) {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #secondFooter p {
+            margin-left: 30px;
+            width: 50%;
+        }
+        #TermeniSiConditii {
+            margin-right: 30px;
+        }
+    }
+    
+    @media(min-width:1024px) {
+        .container {
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 1500px;
+            margin: auto;
+        }
+        nav #buttonList {
+            display: none;
+        }
+        #ulInformatii {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            position: unset;
+            height: 120px;
+            justify-content: center;
+            align-items: center;
+        }
+        #ulInformatii li {
+            border: none;
+            margin-right: 30px;
+            color: white;
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            min-height: 120px;
+        }
+        #logo {
+            height: 75px;
+        }
+        nav ul li {
+            position: relative;
+            z-index: 1;
+        }
+        nav ul li::after {
+            content: '';
+            width: 100%;
+            position: absolute;
+            left: 0;
+            background: linear-gradient(to right, #5680E9, #8860D0);
+            transition: all 1s;
+            z-index: -1;
+            padding: 2px 5px 2px 5px;
+            bottom: -30px;
+            opacity: 0;
+        }
+        nav ul li:hover {
+            background-color: unset;
+            background-image: unset;
+            transform: unset;
+        }
+        nav ul li:hover::after {
+            bottom: -10px;
+            opacity: 1;
+        }
+        #firstFooter li {
+            text-transform: uppercase;
+        }
+        header {
+            background-color: #84CEEB;
+        }
+    }
